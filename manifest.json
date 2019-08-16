@@ -1,0 +1,21 @@
+{
+    "name": "SimpleDownload",
+    "description": "简单的下载工具",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.javdove.com/**",
+                "https://www.javdove2.live/**",
+                "http://www.javdove.site/**",
+                "https://ms.ggyypro.com/**"
+            ],
+            "js": [
+                "contentscript.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ]
+}
