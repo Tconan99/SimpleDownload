@@ -37,9 +37,12 @@ function run () {
     console.log(src);
 
     var buttonTag = document.querySelector(".video-info-section");
+    var path = src + "?" + FILE_NAME + title + ".mp4";
 
-    buttonTag.innerHTML = "<button class='btn bg-red' onclick='window.open(\"" + src + "?" + FILE_NAME + title + ".mp4\", \"target\", \"\")'>下载</button>";
+    // buttonTag.innerHTML = "<button class='btn bg-red' onclick='window.open(\"" + src + "?" + FILE_NAME + title + ".mp4\", \"target\", \"\")'>下载</button>";
+    buttonTag.innerHTML = "<a class='btn bg-red' rel=noreferrer target=_blank href='" + path + "')'>下载</a>";
 }
+
 
 waitForComplete = function () {
 
